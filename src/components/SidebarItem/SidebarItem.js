@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 
 export function SidebarItem({ title, path, icon }) {
   return (
-    <li className="nav-text">
-      <NavLink to={path} activeclassname="nav-item-active">
+    <li>
+      <NavLink to={path} activeclassname="active">
         {icon}
         {title}
       </NavLink>

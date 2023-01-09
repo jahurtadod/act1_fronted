@@ -1,7 +1,16 @@
-.cards-animes {
+.container {
     display: flex;
+    flex-direction: column;
+}
+.header {
+    padding: 24px;
+    color: black;
+}
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 100%;
     gap: 2rem;
-    margin: 4rem 5vw;
-    padding: 0;
+    padding: 24px;
     flex-direction: row;
 }

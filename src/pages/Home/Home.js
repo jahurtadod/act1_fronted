@@ -1,33 +1,38 @@
 import React, { useEffect, useState } from "react";
 import { CardAnime } from "../../components/CardAnime.js/CardAnime";
+import './Home.css';
 
 const Home = () => {
-  const [data, setData] = useState([]);
 
-  const getData = () => {
-    fetch("json/animeData.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then(function (response) {
-        return response.json();
+  const animes = useFetch("json/animeData.json");
+
+  function useFetch (url) {
+    const [data, setData] = useState([]);
+    useEffect(() => {
+      fetch(url, {
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
       })
-      .then(function (myJson) {
-        setData(myJson);
-      });
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (myJson) {
+          setData(myJson);
+        });
+    },[url]);
+    return data;
+  }
 
   return (
-    <div>
-      <h1>Home</h1>
-      <div className="cards-animes">
-        {data.map((item, index) => {
+    <div className="container">
+      <div className="header">
+        <h1>Explorar nuevos animes</h1>
+      </div>
+      
+      <div className="cards-container">
+        {animes.map((item, index) => {
           return (
             <CardAnime
               key={index}

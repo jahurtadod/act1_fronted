@@ -25,8 +25,11 @@ const SidebarData = [
 function NavBar() {
   return (
     <div className="navbar">
-      <Link to="/home" className="menu-bars">
-        <h1>ANIME LIST JH</h1>
+      <Link to="/home" className="nav-logo">
+        <div className="nav-logo">
+          <img src="./logo512.png" alt="Logo" />
+          <h1>AnimeJH</h1>
+        </div>
       </Link>
       <nav>
         <ul className="nav-menu-items">

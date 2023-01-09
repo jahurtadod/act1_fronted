@@ -1,6 +1,6 @@
 .navbar {
-    background-color: aquamarine;
-    width: 250px;
+    background-color: #272727;
+    width: 280px;
     height: 100vh;
     display: flex;
     position: fixed;
@@ -13,4 +13,18 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    gap: 8px;
+}
+.nav-logo {
+    display: flex;
+    gap: 8px;
+    flex-direction: row;
+    padding: 24px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+a {
+    text-decoration: none;
 }
