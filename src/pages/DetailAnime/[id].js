@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { CardList } from "../../components/CardList/CardList";
 
 const Anime = () => {
   const { id } = useParams();
@@ -22,6 +23,7 @@ const Anime = () => {
       <h1>{id}</h1>
       <h2>{anime.animeTitle}</h2>
       <img src={anime.animeImg} alt={anime.animeTitle} />
+      <CardList/>
     </div>
   );
 };

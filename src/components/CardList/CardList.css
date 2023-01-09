@@ -1,0 +1,96 @@
+.container-list {
+    width: 100%;
+    max-width: 750px;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.card-lits-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #2d3748;
+}
+
+.btn-view-all {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #4299e1;
+}
+
+.list {
+    display: block;
+}
+
+.ul-list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    border-top: 1px solid #e2e8f0;
+    border-top-color: #a0aec0;
+    gap: 24px;
+    list-style: none;
+}
+
+.li {
+    padding-top: 16px;
+}
+
+.content-list {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-img {
+    flex-shrink: 0;
+}
+
+.img-profile {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.info-person {
+    flex: 1;
+    min-width: 0;
+}
+
+.person-name {
+    display: flex;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #2D3748;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.person-email {
+    display: flex;
+    font-size: 0.875rem;
+    color: #6c757d;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.person-view {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 900;
+    color: #2D3748;
+}
