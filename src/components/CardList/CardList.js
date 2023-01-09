@@ -4,7 +4,7 @@ function CardList () {
     return (
       <div className="container-list">
         <div className="card-lits-title">
-          <h5 className="card-title">Latest Customers</h5>
+          <h5 className="card-title">Visitas realizadas</h5>
           <a href="/" className="btn-view-all">
             View all
           </a>
@@ -23,7 +23,7 @@ function CardList () {
                   </p>
                 </div>
                 <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                  $320
+                  320
                 </div>
               </div>
             </li>
@@ -43,7 +43,7 @@ function CardList () {
                   </p>
                 </div>
                 <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                  $3467
+                  3467
                 </div>
               </div>
             </li>
@@ -63,7 +63,7 @@ function CardList () {
                   </p>
                 </div>
                 <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                  $67
+                  67
                 </div>
               </div>
             </li>
@@ -79,7 +79,7 @@ function CardList () {
                   </p>
                 </div>
                 <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                  $367
+                  367
                 </div>
               </div>
             </li>
@@ -99,7 +99,7 @@ function CardList () {
                   </p>
                 </div>
                 <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                  $2367
+                  2367
                 </div>
               </div>
             </li>
